@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academias - ATA Uruguay</title>
+    <link rel="icon" type="image/png" href="../images/ata-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- #region Barra de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ata shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="/images/ata-logo.png" alt="ATA Uruguay" class="logo-ata">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAcademias"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarAcademias">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Academias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca_de.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #endregion -->
+
+    <!-- #region CONTENIDO PRINCIPAL -->
+    <main class="flex-grow-1 bg-gradient-soft">
+        <section class="academias-section">
+            <h1 class="section-title">Academias ATA Uruguay</h1>
+            <p class="section-description">
+                Conocé las academias oficiales afiliadas a ATA Uruguay en todo el país.
+            </p>
+
+            <div class="academias-list">
+
+                <article class="academia-card">
+                    <h3>Academia Central</h3>
+                    <p><strong>Ciudad:</strong> Montevideo</p>
+                    <p><strong>Instructor:</strong> Juan Pérez</p>
+                </article>
+
+                <article class="academia-card">
+                    <h3>Academia del Este</h3>
+                    <p><strong>Ciudad:</strong> Maldonado</p>
+                    <p><strong>Instructor:</strong> Ana Gómez</p>
+                </article>
+
+                <article class="academia-card">
+                    <h3>Academia Norte</h3>
+                    <p><strong>Ciudad:</strong> Salto</p>
+                    <p><strong>Instructor:</strong> Carlos Rodríguez</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <!-- #endregion -->
+
+    <!-- #region FOOTER -->
+    <footer class="bg-ata text-light mt-auto">
+        <div class="container py-4 text-center">
+            <small>© 2025 ATA Uruguay · Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <!-- #endregion -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

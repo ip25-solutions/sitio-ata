@@ -1,0 +1,267 @@
+/* =========================================================
+   ESTILO BASE
+   ========================================================= */
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #212529;
+}
+
+h1,
+h2,
+h3,
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    color: #8B0000;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COMPONENTES Y UTILIDADES
+   ========================================================= */
+
+.bg-ata {
+    background-color: #8B0000;
+}
+
+.bg-gradient-soft {
+    background: linear-gradient(180deg,
+            #dae0ec 0%,
+            #e7e3e3 45%,
+            #f2f3f5 100%);
+}
+
+.carousel img {
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.content-narrow {
+    max-width: 800px;
+}
+
+.logo-ata {
+    height: 40px;
+    width: auto;
+}
+
+.main-class {
+    background: linear-gradient(rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95));
+}
+
+.section-light {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.shadow-soft {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.section-description {
+    max-width: 600px;
+    margin: 1rem auto 3rem;
+    color: #555;
+}
+
+@media (max-width: 576px) {
+    .logo-ata {
+        height: 32px;
+    }
+}
+
+
+/* =========================================================
+   ACADEMIAS.HTML CON FLEXBOX
+   ========================================================= */
+
+.academias-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.academias-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.academia-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 1.8rem;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.07),
+        0 2px 6px rgba(0, 0, 0, 0.04);
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.academia-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.academia-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.1),
+        0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 576px) {
+    .academia-card {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   EVENTOS.HTML CON GRID
+   ========================================================= */
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.eventos-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.evento-card {
+    background-color: #ffffff;
+    padding: 1.8rem;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.06),
+        0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.evento-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.evento-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.1),
+        0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.evento-desc {
+    margin-top: 0.8rem;
+    color: #555;
+}
+
+
+/* =========================================================
+   ACERCA_DE.HTML
+   ========================================================= */
+
+.acerca-bloque1 {
+    margin-bottom: 2.2rem;
+}
+
+.acerca-bloque1 p {
+    max-width: 760px;
+    margin: 0.8rem auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+.acerca-cierre {
+    max-width: 760px;
+    margin: 3rem auto 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.acerca-destacado {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #8b0000;
+    margin-bottom: 3rem;
+}
+
+.acerca-texto {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.acerca-texto .section-title {
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 576px) {
+    .acerca-destacado {
+        font-size: 1.1rem;
+    }
+
+    .acerca-texto {
+        padding: 3rem 1.2rem;
+    }
+}
+
+
+/* =========================================================
+   CONTACTO.HTML
+   ========================================================= */
+
+.btn-ata {
+    background-color: #8b0000;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-ata:hover {
+    background-color: #6f0000;
+}
+
+.contacto-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+}
+
+.contacto-section {
+    padding: 4rem 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .contacto-form {
+        padding: 2rem 1.5rem;
+    }
+}
