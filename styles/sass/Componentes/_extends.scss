@@ -1,0 +1,19 @@
+@use '../Utilidades/variables' as *;
+
+// Botones base
+%btn-base {
+    padding: $padding-base;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: $border-radius;
+    transition: background $transition;
+}
+
+// Tarjetas y paneles
+%card-base {
+    background-color: $color-blanco;
+    padding: $padding-cards;
+    border-radius: $border-radius;
+    transition: transform $transition, box-shadow $transition;
+}

@@ -1,0 +1,14 @@
+// ======================================
+// Archivo principal
+// ======================================
+
+@use 'Utilidades/variables' as *;
+@use 'Utilidades/mixins' as *;
+@use 'Componentes/extends' as *;
+@use 'Base/base' as *;
+@use 'Componentes/componentes' as *;
+@use 'Layouts/academias' as *;
+@use 'Layouts/eventos' as *;
+@use 'Layouts/acerca-de' as *;
+@use 'Layouts/contacto' as *;
+@use 'Responsive/responsive' as *;

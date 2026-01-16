@@ -1,0 +1,23 @@
+@use '../Utilidades/variables' as *;
+@use '../Componentes/extends' as *;
+// CONTACTO.HTML
+
+
+.btn-ata {
+    @extend %btn-base;
+    background-color: $color-principal;
+    color: $color-blanco;
+
+    &:hover {
+        background-color: $color-secundario;
+    }
+}
+
+.contacto-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+}
+
+.contacto-section {
+    padding: 4rem 1.5rem;
+}

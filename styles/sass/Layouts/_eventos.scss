@@ -1,0 +1,37 @@
+// EVENTOS.HTML
+@use '../Componentes/extends' as *;
+@use '../Utilidades/variables' as *;
+@use '../Utilidades/mixins' as *;
+
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.eventos-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.evento-card {
+    @extend %card-base;
+
+    h3 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+}
+
+.evento-desc {
+    margin-top: 0.8rem;
+    color: $color-texto-secundario;
+}

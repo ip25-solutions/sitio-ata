@@ -1,0 +1,22 @@
+@use '../Utilidades/variables' as *;
+
+body {
+    font-family: $font-base;
+    color: $color-texto-primario;
+}
+
+h1,
+h2,
+h3,
+.section-title {
+    font-family: $font-titulo;
+    font-weight: 700;
+}
+
+h3 {
+    color: $color-principal;
+}
+
+p {
+    line-height: 1.7;
+}

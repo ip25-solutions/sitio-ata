@@ -1,0 +1,24 @@
+// MEDIA QUERIES
+
+
+@media (max-width: 576px) {
+    .logo-ata {
+        height: 32px;
+    }
+
+    .academia-card {
+        max-width: 100%;
+    }
+
+    .acerca-destacado {
+        font-size: 1.1rem;
+    }
+
+    .acerca-texto {
+        padding: 3rem 1.2rem;
+    }
+
+    .contacto-form {
+        padding: 2rem 1.5rem;
+    }
+}
