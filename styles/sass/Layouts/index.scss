@@ -1,0 +1,45 @@
+@use '../Utilidades/variables' as vars;
+@use '../Utilidades/mixins' as mixins;
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@mixin fade-in($duration: 1s, $delay: 0s) {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation $duration ease forwards;
+    animation-delay: $delay;
+}
+
+.section-title {
+    @include fade-in(1s, 0s);
+}
+
+h2 {
+    @include fade-in(1s, 0.3s);
+}
+
+.content-narrow p {
+    @include fade-in(1s, 0.5s);
+}
+
+.content-narrow p {
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        color: vars.$color-principal;
+    }
+}
+
+.carousel-item img {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item.active img {
+    transform: scale(1.05);
+}

@@ -85,6 +85,49 @@ p {
   color: #555;
 }
 
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0s;
+}
+
+h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.content-narrow p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.content-narrow p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.content-narrow p:hover {
+  transform: translateY(-5px);
+  color: #8B0000;
+}
+
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
+
+.carousel-item.active img {
+  transform: scale(1.05);
+}
+
 .academias-list {
   display: flex;
   flex-direction: row;
