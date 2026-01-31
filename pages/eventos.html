@@ -1,66 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-UY">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos - ATA Uruguay</title>
-    <link rel="icon" type="image/png" href="../images/ata-logo.png">
-    <!-- Bootstrap SOLO para navbar y footer -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS propio -->
+    <title>Eventos ATA Uruguay | Taekwondo en Uruguay</title>
+    <meta name="description"
+        content="Próximos eventos de Taekwondo ATA Uruguay: torneos, seminarios, clínicas y actividades oficiales en todo el país.">
+
+    <link rel="canonical" href="eventos.html">
+    <link rel="icon" type="image/png" href="../images/ata-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/sass/style.css">
+
+    <meta property="og:locale" content="es_UY">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eventos ATA Uruguay | Taekwondo en Uruguay">
+    <meta property="og:description" content="Conocé los próximos eventos oficiales de ATA Uruguay.">
+    <meta property="og:image" content="../images/ata-logo.png">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- NAVBAR (Bootstrap) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-ata shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/ata-logo.png" alt="ATA Uruguay" class="logo-ata">
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ata shadow-sm" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html" aria-label="Ir a inicio">
+                    <img src="../images/ata-logo.png" alt="Logo de ATA Uruguay" class="logo-ata">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEventos"
-                aria-label="Abrir menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEventos"
+                    aria-controls="navbarEventos" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarEventos">
-                <ul class="navbar-nav ms-auto gap-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./academias.html">Academias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./acerca_de.html">Acerca de</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarEventos">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./academias.html">Academias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acerca_de.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- CONTENIDO (CSS GRID PURO) -->
     <main class="flex-grow-1 bg-gradient-soft">
-        <section class="eventos-section">
-            <h1 class="section-title">Próximos Eventos</h1>
+        <section class="eventos-section" aria-labelledby="titulo-eventos">
+            <h1 id="titulo-eventos" class="section-title">Próximos Eventos</h1>
+
             <p class="section-description">
                 Competiciones, conferencias, demostraciones y seminarios relacionados con el Taekwondo ATA.
             </p>
 
-            <div class="eventos-grid">
-
+            <div class="eventos-grid" aria-label="Listado de eventos">
                 <article class="evento-card">
-                    <h3>Torneo Nacional ATA</h3>
+                    <h2 class="h5">Torneo Nacional ATA</h2>
                     <p><strong>Fecha:</strong> 26 de marzo de 2026</p>
                     <p><strong>Lugar:</strong> Montevideo</p>
                     <p class="evento-desc">
@@ -69,7 +84,7 @@
                 </article>
 
                 <article class="evento-card">
-                    <h3>Torneo Nacional ATA</h3>
+                    <h2 class="h5">Torneo Nacional ATA</h2>
                     <p><strong>Fecha:</strong> 30 de abril de 2026</p>
                     <p><strong>Lugar:</strong> Montevideo</p>
                     <p class="evento-desc">
@@ -78,26 +93,24 @@
                 </article>
 
                 <article class="evento-card">
-                    <h3>Clínica de Arbitraje</h3>
+                    <h2 class="h5">Clínica de Arbitraje</h2>
                     <p><strong>Fecha:</strong> 20 de mayo de 2026</p>
                     <p><strong>Lugar:</strong> Montevideo</p>
                     <p class="evento-desc">
                         Congreso nacional para formación y actualización arbitral.
                     </p>
                 </article>
-
             </div>
         </section>
     </main>
 
-    <!-- FOOTER (Bootstrap) -->
     <footer class="bg-ata text-light mt-auto">
         <div class="container py-4 text-center">
             <small>© 2025 ATA Uruguay · Todos los derechos reservados</small>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
